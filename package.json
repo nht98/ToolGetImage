@@ -1,0 +1,27 @@
+{
+  "name": "toolgetimage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nht98/ToolGetImage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nht98/ToolGetImage/issues"
+  },
+  "homepage": "https://github.com/nht98/ToolGetImage#readme",
+  "dependencies": {
+    "cli-progress": "^3.8.2",
+    "grepit": "^1.0.0",
+    "lodash": "^4.17.10",
+    "readline-sync": "^1.4.9",
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
+  }
+}
