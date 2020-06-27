@@ -26,7 +26,7 @@ var getAllPhoto = (idFB) => {
                 var arrayData = parsedData.data;
                 arrayData.forEach(function(index){
                     var imageLink = index.full_picture;
-                    if(imageLink != undefined){
+                    if(imageLink != undefined && imageLink != ""){
                         fs.appendFile(`value/${idFB}-fb.html`, `\n<img src="${imageLink}" style=" width: 270px;height: 280px;float: left;margin-left: 70px;margin-top: 20px;margin-bottom: 60px;position: relative;">`, (err) => {  
                             if (err){
 
@@ -46,9 +46,6 @@ var getAllPhoto = (idFB) => {
                 }catch(err){
 
                 }
-            }
-            if (response.statusCode == 429) {
-                console.log("You have reach limit of REQUESTS\nTry again next hour");
             }
         }
         )

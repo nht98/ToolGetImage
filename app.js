@@ -1,4 +1,3 @@
-var Instagram = require ('instagram-nodejs-without-api');
 const instagrab = require('./modules/getAllPhoto.js');
 const fb = require('./modules/getAllFb.js');
 var readline = require('readline-sync');
